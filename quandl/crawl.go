@@ -10,6 +10,7 @@ import (
 	"github.com/go-errors/errors"
 )
 
+// Gets response for GBPvsEur and GBPvsUSD in []{ string : "yy-mm-dd", float64 : "0.00" }
 func CrawlCurrencies(config *configuration.Configuration) ([][]model.DataResponse, error) {
 	request := model.Request{ ApiKey: config.API.Key, StartDate: config.API.Query.StartDate, Order: config.API.Query.Sort }
 	queryString := func (r  model.Request) string {
