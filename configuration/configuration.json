@@ -1,0 +1,20 @@
+{
+  "Api" : {
+    "Key" : "???,
+    "Url" : "https://www.quandl.com/api/v3/datasets/",
+    "Datasets" : [
+      {
+        "Name" : "ECB",
+        "Comparison" : "EURGBP"
+      },
+      {
+        "Name" : "CUR",
+        "Comparison" : "GBP"
+      }
+    ],
+    "Query" : {
+      "StartDate" : "2015-01-01",
+      "Sort" : "asc"
+    }
+  }
+}
